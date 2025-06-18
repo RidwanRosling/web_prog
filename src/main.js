@@ -32,9 +32,9 @@ document.querySelector("#app").innerHTML = `
 
     <div class="modal hidden">
       <button class="close-aboutUs">&times;</button>
-      <h1>About Us</h1>
-      <p>
-        Testing 123
+      <h1 class="h1-aboutUs">About Us</h1>
+      <p class="p-aboutUs">
+        Disini adalah about us
       </p>
     </div>
 
