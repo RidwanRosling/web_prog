@@ -29,6 +29,10 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
     </div>
+
+    <div>
+    <img src="/wave.svg"/>
+    </div>
 `;
 
 // setupCounter(document.querySelector("#counter"));
