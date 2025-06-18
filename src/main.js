@@ -1,5 +1,5 @@
 import "./style.css";
-// import {closeModal, openModal} from "./app.js";
+import {closeModal, openModal} from "./app.js";
 
 document.querySelector("#app").innerHTML = `
    <nav class="navbar">
@@ -31,7 +31,7 @@ document.querySelector("#app").innerHTML = `
     </div>
 
     <div class="modal hidden">
-      <button class="close-aboutUs">&times;</button>
+      <button class="close-aboutUs">>&times;</button>
       <h1>About Us</h1>
       <p>
         Testing 123
