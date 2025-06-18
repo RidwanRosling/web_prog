@@ -1,22 +1,34 @@
 import "./style.css";
-import { setupCounter } from "./counter.js";
+// import { setupCounter } from "./counter.js";
 
 document.querySelector("#app").innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+   <nav class="navbar">
+      <div class="navbar-brand">
+        <a>Wild Voice</a>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Species</a></li>
+        <li><a href="#">About</a></li>
+        <li><a id="login" href="#">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- Landing Section -->
+    <div class="container">
+      <div class="sideText">
+        <h1>
+          Forest Ranger: <br />
+          Endangered Species of Indonesia
+        </h1>
+        <p>Suara alam liar: spesies darat yang terancam punah</p>
+
+        <div class="button-explore">
+          <div class="explore">Explore</div>
+          <div class="arrow-right"></div>
+        </div>
+      </div>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
 `;
 
-setupCounter(document.querySelector("#counter"));
+// setupCounter(document.querySelector("#counter"));
