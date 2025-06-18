@@ -1,5 +1,5 @@
 import "./style.css";
-// import { setupCounter } from "./counter.js";
+import {closeModal, openModal} from "./app.js";
 
 document.querySelector("#app").innerHTML = `
    <nav class="navbar">
@@ -9,7 +9,7 @@ document.querySelector("#app").innerHTML = `
       <ul class="navbar-links">
         <li><a href="#">Support</a></li>
         <li><a href="#">Species</a></li>
-        <li><a href="#">About</a></li>
+        <li class="show-aboutUs"><a href="#">About us</a></li>
         <li><a id="login" href="#">Login</a></li>
       </ul>
     </nav>
@@ -29,6 +29,16 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
     </div>
+
+    <div class="modal hidden">
+      <button class="close-aboutUs">>&times;</button>
+      <h1>About Us</h1>
+      <p>
+        Testing 123
+      </p>
+    </div>
+
+    <div class="overlay hidden"></div>
 `;
 
 // setupCounter(document.querySelector("#counter"));
