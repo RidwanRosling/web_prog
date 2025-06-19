@@ -43,43 +43,42 @@ document.querySelector("#app").innerHTML = `
         <div class="slide-track">
           
           <div class="slide">
-            <img src="./Backup_zaki/images/fot1.jpg"/ class="slide-img">
+            <img src="./Backup_zaki/images/badak sumatera.JPEG"/ class="slide-img">
           </div>
 
           <div class="slide">
-            <img src="./Backup_zaki/images/fot2.jpg"/ class="slide-img">
-          </div>
-          
-          <div class="slide">
-            <img src="./Backup_zaki/images/fot3.jpg"/ class="slide-img">
-          </div>      
-
-          <div class="slide">
-            <img src="./Backup_zaki/images/fot4.jpg"/ class="slide-img">
-          </div>
-
-          <div class="slide">
-            <img src="./Backup_zaki/images/fot5.jpg"/ class="slide-img">
-          </div>
-
-          <div class="slide">
-            <img src="./Backup_zaki/images/fot1.jpg"/ class="slide-img">
-          </div>
-
-          <div class="slide">
-            <img src="./Backup_zaki/images/fot2.jpg"/ class="slide-img">
+            <img src="./Backup_zaki/images/burung cenderawasih.jpg"/ class="slide-img">
           </div>
           
           <div class="slide">
-            <img src="./Backup_zaki/images/fot3.jpg"/ class="slide-img">
+            <img src="./Backup_zaki/images/harimau.jpg"/ class="slide-img">
           </div>      
 
           <div class="slide">
-            <img src="./Backup_zaki/images/fot4.jpg"/ class="slide-img">
+            <img src="./Backup_zaki/images/komodo.jpg"/ class="slide-img">
           </div>
 
           <div class="slide">
-            <img src="./Backup_zaki/images/fot5.jpg"/ class="slide-img">
+            <img src="./Backup_zaki/images/orang utan.JPG"/ class="slide-img">
+          </div>
+          <div class="slide">
+            <img src="./Backup_zaki/images/badak sumatera.JPEG"/ class="slide-img">
+          </div>
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/burung cenderawasih.jpg"/ class="slide-img">
+          </div>
+          
+          <div class="slide">
+            <img src="./Backup_zaki/images/harimau.jpg"/ class="slide-img">
+          </div>      
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/komodo.jpg"/ class="slide-img">
+          </div>
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/orang utan.JPG"/ class="slide-img">
           </div>
 
         </div>

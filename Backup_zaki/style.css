@@ -103,7 +103,7 @@ html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: url("/mountains-1412683.png");
+  background-image: url("/hayam_wuruk.jpg");
   background-size: cover;
   background-position: center;
   align-items: flex-end;
@@ -234,7 +234,7 @@ html {
 
 .slide-img {
   width: 100%;
-  display: block;
+  display: flex;
   object-fit: cover;
   opacity: 0.6;
 }
@@ -272,6 +272,7 @@ html {
 }
 
 #contactUs {
+  color: rgb(0, 0, 0);
   font-family: sans-serif;
   position: absolute;
   right: 2rem;
