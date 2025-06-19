@@ -9,7 +9,6 @@ document.querySelector("#app").innerHTML = `
       <li><a href="#">Support</a></li>
       <li><a href="#">Species</a></li>
       <li class="show-aboutUs"><a href="#">About us</a></li>
-      <li><a id="login" href="#">Login</a></li>
       <li><a id="login" href="http://localhost/web_prog/public/php-login/login.php">login</a></li>
     </ul>
   </nav>
@@ -60,6 +59,7 @@ fetch("img.json")
     const spans = document.querySelectorAll(".btn-filter");
     spans.forEach((span) => {
       span.addEventListener("click", () => {
+        console.log(span.dataset.region); // ➜ "Sumatra"
         const region = span.dataset.region;
         renderRegion(region);
       });
@@ -69,7 +69,7 @@ fetch("img.json")
 
 function renderRegion(regionName) {
   const container = document.querySelector(".card-container");
-  container.innerHTML = ""; // kosongkan sebelumnya
+  container.innerHTML = "";
 
   const region = allData[regionName];
   if (!region) return;
