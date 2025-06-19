@@ -29,6 +29,18 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
     </div>
+
+    
+    <div class="modal hidden">
+      <button class="close-aboutUs">>&times;</button>
+      <h1>About Us</h1>
+      <p>
+        Testing 123
+      </p>
+    </div>
+
+    <div class="overlay hidden"></div>
 `;
 
 // setupCounter(document.querySelector("#counter"));
+closeModal(document.querySelector(".close-aboutUs"));
