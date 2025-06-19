@@ -40,20 +40,42 @@ document.querySelector("#app").innerHTML = `
 
     <div class="overlay hidden"></div>
 
-    <!-- Flora and Fauna Section -->
-    <se
+    <!-- Flora and Fauna text start -->
     <div class="container-flora-fauna">
       <h1>Endangered Specieses</h1>
       <div class="flora-fauna">
-        <div class="flora">
           <h2>Flora</h2>
-        </div>
-        <div class="fauna">
           <h2>Fauna</h2>
-        </div>
       </div>
-    </div
+    </div>
+    <!-- Flora and Fauna text end -->
+
+    <!-- Flora Card Start-->
+      <div class="card-container">
+      </div>
+    <!-- Flora Card end-->
 `;
+
+fetch("img.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const sumatraData = data.Sumatra;
+
+    // Ambil flora
+    const faunaList = sumatraData.fauna;
+    faunaList.forEach((fauna) => {
+      console.log(
+        `Nama: ${fauna.nama}, Spesies: ${fauna.spesies}, Asal: ${fauna.asal}`
+      );
+
+      // Bisa insert ke DOM
+      const faunaContainer = document.querySelector(".card-container");
+      faunaContainer.innerHTML += `
+        <img src="${fauna.image}" alt="${fauna.nama}" class="flora-card-${fauna.Id}">
+      `;
+    });
+  })
+  .catch((error) => console.error("Gagal memuat JSON:", error));
 
 // 2. Ambil elemen yang kita butuhkan
 const modal = document.querySelector(".modal");

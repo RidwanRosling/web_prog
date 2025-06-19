@@ -1,153 +1,182 @@
 {
-    "Sumatra": {
-        "fauna": [
-            {   
-                "nama": "Harimau Sumatra", 
-                "image": "https://www.rekoforest.org/wp-content/uploads/2019/05/RER-Sumatran-Tiger-4a.jpg"
-            },
-            {
-                "nama": "Gajah Sumatra",
-                "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8opFZL6IP7Hz0cnVwC5ZsDpUvf-5G7jjaJJL42ZKrCJAKtmjVQ8GDRqncDRgMXNE3J2dRThuYby77iIt9OuEbA4eoPUsbdJJ9IxVWS_aA"
-            },
-            {
-                "nama": "Orangutan Sumatra",
-                "image": "https://cdn.betahita.id/5/8/9/7/5897.jpeg"
-            }
-        ],
-        "flora": [
-            {
-                "nama": "Rafflesia",
-                "image": "https://cdn.rri.co.id/berita/Bintuhan/o/1740570601590-1000039278/5624sctt5al90e2.jpeg"
-            },
-            {
-                "nama": "Bunga Bangkai",
-                "image": "https://cdn.britannica.com/59/195759-050-DE1A4EE3/Titan-arum-bloom-Washington-DC-United-States.jpg?w=1000"
-            },
-            {
-                "nama": "Sialang",
-                "image": "https://img.antaranews.com/cache/1200x800/2021/04/15/1504-2021-pohon-sialang.jpg.webp"
-            }
-        ]
-    },
-    "Kalimantan": {
-        "fauna": [
-            {
-                "nama": "Orangutan Kalimantan",
-                "image": "https://budaya.jogjaprov.go.id/view_image/images/1692606366_31ccaed170e52228b08d82b8b206a4cd.jpg"
-                
-            },
-            {
-                "nama": "Bekantan",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Proboscis.jpg/250px-Proboscis.jpg"
-            },
-            {
-                "nama": "Macan Dahan",
-                "image": "https://intuisi.co/wp-content/uploads/2025/02/MACAN-DAHAN-KALIMANTAN-1024x632.jpeg"
-            }
-        ],
-        "flora": [
-            {
-                "nama": "Kayu Ulin",
-                "image": "https://ciriciripohon.id/wp-content/uploads/2023/06/Ulin.jpg"
-            },
-            {
-                "nama": "Anggrek Hitam",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Coelogyne_pandurata_orchid_%2849375109546%29.jpg/250px-Coelogyne_pandurata_orchid_%2849375109546%29.jpg"
-            },
-            {
-                "nama": "Tengkawang",
-                "image": "https://www.greeners.co/wp-content/uploads/2021/02/Tengkawang-2.jpg"
-            }
-        ]
-    },
-    "Jawa": {
-        "fauna": [
-            {
-                "nama": "Elang Jawa",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/ELANG_JAWA.jpg"
-            },
-            {
-                "nama": "Macan Tutul Jawa",
-                "image": "https://images.forestdigest.com/upload/2024/20240817021535.jpg"
-            },
-            {
-                "nama": "Lutung Jawa",
-                "image": "https://baliwildlife.com/wp-content/uploads/2021/09/IMG_1836.jpg"
-            }
-        ],
-        "flora": [
-            {
-                "nama": "Edelweis Jawa",
-                "image": "https://image.idntimes.com/post/20190222/img-3437-01-3078962e8bf72010215cc983acbf4ddf.jpeg"
-            },
-            {
-                "nama": "Jati",
-                "image": "https://tamandigital.faperta.unand.ac.id/images/joomlart/tanaman/kayu-hutan/detail/jati.jpg"
-            },
-            {
-                "nama": "Akasia",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Acacia_auriculiformis_flowers.jpg"
-            }
-        ]
-    },
-    "Sulawesi": {
-        "fauna": [
-            {
-                "nama": "Anoa",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Mountain_Anoa_at_Krefeld_Zoo.jpg"
-            },
-            {
-                "nama": "Babirusa",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Hirscheber1a.jpg"
-            },
-            {
-                "nama": "Tarsius",
-                "image": "https://indonesia.go.id/assets/upload/headline/1607757554_328F4769_734E_4B22_9BB9_60F51B5197C6_thumb.jpeg"
-            }
-        ],
-        "flora": [
-            {
-                "nama": "Eboni Sulawesi",
-                "image": "https://himaba.fkt.ugm.ac.id/wp-content/uploads/sites/403/2019/09/eboni.jpg"
-            },
-            {
-                "nama": "Palem endemik",
-                "image": "https://live.staticflickr.com/65535/53584126495_207dbb624d_b.jpg"
-            },
-            {
-                "nama": "Cempaka kuning",
-                "image": "https://media.licdn.com/dms/image/v2/D4D12AQE0dSj3oWuvfg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1714807503390?e=2147483647&v=beta&t=FBNnWpXwuN0Q5SMH0f3a_TqJ2Q_jbZIJCCuojxg7h-s"
-            }
-        ]
-    },
-    "Papua": {
-        "fauna": [
-            {
-                "nama": "Burung Cenderawasih",
-                "image": "https://media.istockphoto.com/id/1354877677/photo/the-lesser-bird-of-paradise-paradisaea-minor.jpg?s=612x612&w=0&k=20&c=hldJW7oW2QrGIThoXqJ044znQuQ4ir6kSuDitNiJdRo="
-            },
-            {
-                "nama": "Kasuari",
-                "image": "https://static.inaturalist.org/photos/35647358/large.jpeg"
-            },
-            {
-                "nama": "Kanguru Pohon",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Buergers%27_Tree-kangaroo%2C_Dendrolagus_goodfellowi_redeye_correction.jpg/250px-Buergers%27_Tree-kangaroo%2C_Dendrolagus_goodfellowi_redeye_correction.jpg"
-            }
-        ],
-        "flora": [
-            {
-                "nama": "Matoa",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Pometia_pinnata.jpg"
-            },
-            {
-                "nama": "Anggrek raksasa",
-                "image": "https://storage.googleapis.com/powop-assets/kew_profiles/Grammatophyllum_speciosum_002_2_main_flwrs_fullsize.jpg"
-            },
-            {
-                "nama": "Pohon besi",
-                "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Intsia_bijuga.jpg"
-            }
-        ]
-    }
+  "Sumatra": {
+    "fauna": [
+      {
+        "id": 1,
+        "nama": "Harimau Sumatra",
+        "image": "https://www.rekoforest.org/wp-content/uploads/2019/05/RER-Sumatran-Tiger-4a.jpg"
+      },
+      {
+        "id": 2,
+        "nama": "Gajah Sumatra",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8opFZL6IP7Hz0cnVwC5ZsDpUvf-5G7jjaJJL42ZKrCJAKtmjVQ8GDRqncDRgMXNE3J2dRThuYby77iIt9OuEbA4eoPUsbdJJ9IxVWS_aA"
+      },
+      {
+        "id": 3,
+        "nama": "Orangutan Sumatra",
+        "image": "https://cdn.betahita.id/5/8/9/7/5897.jpeg"
+      }
+    ],
+    "flora": [
+      {
+        "id": 1,
+        "nama": "Rafflesia",
+        "image": "https://cdn.rri.co.id/berita/Bintuhan/o/1740570601590-1000039278/5624sctt5al90e2.jpeg"
+      },
+      {
+        "id": 2,
+        "nama": "Bunga Bangkai",
+        "image": "https://cdn.britannica.com/59/195759-050-DE1A4EE3/Titan-arum-bloom-Washington-DC-United-States.jpg?w=1000"
+      },
+      {
+        "id": 3,
+        "nama": "Sialang",
+        "image": "https://img.antaranews.com/cache/1200x800/2021/04/15/1504-2021-pohon-sialang.jpg.webp"
+      }
+    ]
+  },
+  "Kalimantan": {
+    "fauna": [
+      {
+        "id": 1,
+        "nama": "Orangutan Kalimantan",
+        "image": "https://budaya.jogjaprov.go.id/view_image/images/1692606366_31ccaed170e52228b08d82b8b206a4cd.jpg"
+      },
+      {
+        "id": 2,
+        "nama": "Bekantan",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Proboscis.jpg/250px-Proboscis.jpg"
+      },
+      {
+        "id": 3,
+        "nama": "Macan Dahan",
+        "image": "https://intuisi.co/wp-content/uploads/2025/02/MACAN-DAHAN-KALIMANTAN-1024x632.jpeg"
+      }
+    ],
+    "flora": [
+      {
+        "id": 1,
+        "nama": "Kayu Ulin",
+        "image": "https://ciriciripohon.id/wp-content/uploads/2023/06/Ulin.jpg"
+      },
+      {
+        "id": 2,
+        "nama": "Anggrek Hitam",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Coelogyne_pandurata_orchid_%2849375109546%29.jpg/250px-Coelogyne_pandurata_orchid_%2849375109546%29.jpg"
+      },
+      {
+        "id": 3,
+        "nama": "Tengkawang",
+        "image": "https://www.greeners.co/wp-content/uploads/2021/02/Tengkawang-2.jpg"
+      }
+    ]
+  },
+  "Jawa": {
+    "fauna": [
+      {
+        "id": 1,
+        "nama": "Elang Jawa",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/ELANG_JAWA.jpg"
+      },
+      {
+        "id": 2,
+        "nama": "Macan Tutul Jawa",
+        "image": "https://images.forestdigest.com/upload/2024/20240817021535.jpg"
+      },
+      {
+        "id": 3,
+        "nama": "Lutung Jawa",
+        "image": "https://baliwildlife.com/wp-content/uploads/2021/09/IMG_1836.jpg"
+      }
+    ],
+    "flora": [
+      {
+        "id": 1,
+        "nama": "Edelweis Jawa",
+        "image": "https://image.idntimes.com/post/20190222/img-3437-01-3078962e8bf72010215cc983acbf4ddf.jpeg"
+      },
+      {
+        "id": 2,
+        "nama": "Jati",
+        "image": "https://tamandigital.faperta.unand.ac.id/images/joomlart/tanaman/kayu-hutan/detail/jati.jpg"
+      },
+      {
+        "id": 3,
+        "nama": "Akasia",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Acacia_auriculiformis_flowers.jpg"
+      }
+    ]
+  },
+  "Sulawesi": {
+    "fauna": [
+      {
+        "id": 1,
+        "nama": "Anoa",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Mountain_Anoa_at_Krefeld_Zoo.jpg"
+      },
+      {
+        "id": 2,
+        "nama": "Babirusa",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Hirscheber1a.jpg"
+      },
+      {
+        "id": 3,
+        "nama": "Tarsius",
+        "image": "https://indonesia.go.id/assets/upload/headline/1607757554_328F4769_734E_4B22_9BB9_60F51B5197C6_thumb.jpeg"
+      }
+    ],
+    "flora": [
+      {
+        "id": 1,
+        "nama": "Eboni Sulawesi",
+        "image": "https://himaba.fkt.ugm.ac.id/wp-content/uploads/sites/403/2019/09/eboni.jpg"
+      },
+      {
+        "id": 2,
+        "nama": "Palem endemik",
+        "image": "https://live.staticflickr.com/65535/53584126495_207dbb624d_b.jpg"
+      },
+      {
+        "id": 3,
+        "nama": "Cempaka kuning",
+        "image": "https://media.licdn.com/dms/image/v2/D4D12AQE0dSj3oWuvfg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1714807503390?e=2147483647&v=beta&t=FBNnWpXwuN0Q5SMH0f3a_TqJ2Q_jbZIJCCuojxg7h-s"
+      }
+    ]
+  },
+  "Papua": {
+    "fauna": [
+      {
+        "id": 1,
+        "nama": "Burung Cenderawasih",
+        "image": "https://media.istockphoto.com/id/1354877677/photo/the-lesser-bird-of-paradise-paradisaea-minor.jpg?s=612x612&w=0&k=20&c=hldJW7oW2QrGIThoXqJ044znQuQ4ir6kSuDitNiJdRo="
+      },
+      {
+        "id": 2,
+        "nama": "Kasuari",
+        "image": "https://static.inaturalist.org/photos/35647358/large.jpeg"
+      },
+      {
+        "id": 3,
+        "nama": "Kanguru Pohon",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Buergers%27_Tree-kangaroo%2C_Dendrolagus_goodfellowi_redeye_correction.jpg/250px-Buergers%27_Tree-kangaroo%2C_Dendrolagus_goodfellowi_redeye_correction.jpg"
+      }
+    ],
+    "flora": [
+      {
+        "id": 1,
+        "nama": "Matoa",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Pometia_pinnata.jpg"
+      },
+      {
+        "id": 2,
+        "nama": "Anggrek raksasa",
+        "image": "https://storage.googleapis.com/powop-assets/kew_profiles/Grammatophyllum_speciosum_002_2_main_flwrs_fullsize.jpg"
+      },
+      {
+        "id": 3,
+        "nama": "Pohon besi",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Intsia_bijuga.jpg"
+      }
+    ]
+  }
 }
