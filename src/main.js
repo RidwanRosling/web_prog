@@ -24,40 +24,55 @@ document.querySelector("#app").innerHTML = `
         <p>Suara alam liar: spesies darat yang terancam punah</p>
 
         <div class="button-explore">
-          <div class="explore">Explore</div>
+          <div class="explore">More Info</div>
           <div class="arrow-right"></div>
         </div>
       </div>
     </div>
+
+    <div class="modal hidden">
+      <button class="close-aboutUs">&times;</button>
+      <h1 class="h1-aboutUs">About Us</h1>
+      <p class="p-aboutUs">
+        Disini adalah about us
+      </p>
+    </div>
+
+    <div class="overlay hidden"></div>
 `;
 
-// setupCounter(document.querySelector("#counter"));
-closeModal(document.querySelector(".close-aboutUs"));
-
+// 2. Ambil elemen yang kita butuhkan
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-const btnCloseModel = document.querySelector(".close-aboutUs");
+const btnCloseModal = document.querySelector(".close-aboutUs");
 const btnOpenModal = document.querySelectorAll(".show-aboutUs");
+
+// 3. Definisi fungsi
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
 
 const closeModal = function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 };
 
-const openModal = function () {
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-};
+// 4. Event binding
+// 4a. Tombol “About us”
+btnOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
 
-for (let i = 0; i < btnOpenModal.length; i++)
-  btnOpenModal[i].addEventListener("click", openModal);
-
-btnCloseModel.addEventListener("click", closeModal);
-
+// 4b. Tombol ✕ dan overlay background
+btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
-document.querySelector("keydown", function (e) {
+// 4c. Tutup dengan Escape
+document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
     closeModal();
   }
 });
+
+// 5. Jika ingin modalnya langsung tersembunyi di awal,
+//    pastikan class="hidden" sudah ada di HTML (sudah kita pakai).
+//    Jadi **tidak perlu** memanggil closeModal() lagi di sini.

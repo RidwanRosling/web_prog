@@ -106,6 +106,7 @@ html {
   background-image: url("/forest.jpg");
   background-size: cover;
   background-position: center;
+  align-items: flex-end;
   color: #ffff;
 }
 .sideText {
@@ -113,17 +114,18 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 4rem;
 }
 
 .sideText h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 54px;
+  font-size: 40px;
   letter-spacing: 2px;
 }
 
 .sideText p {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
   letter-spacing: 2px;
 }
@@ -149,8 +151,6 @@ html {
   background-position: center;
   } */
 
-
-  
 .close-aboutUs {
   position: absolute;
   top: 1.2rem;
