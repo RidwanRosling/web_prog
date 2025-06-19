@@ -3,41 +3,41 @@
         "fauna": [
             {
                 "nama": "Harimau Sumatra", 
-                "image": "https://www.rekoforest.org/wp-content/uploads/2019/05/RER-Sumatran-Tiger-4a.jpg"
+                "spesies": "Panthera tigris sumatra", 
+                "asal": "Sumatra",
+                "keterangan": "Subspesies harimau terakhir di Indonesia,"
             },
             {
                 "nama": "Gajah Sumatra",
-                "image": "https://www.rekoforest.org/wp-content/uploads/2019/05/RER-Sumatran-Tiger-4a.jpg"
+                "spesies": "Elephas maximus sumatranus",
+                "asal": "Sumatra",
+                "keterangan": "Herbivora besar, populasinya semakin menyusut"
             },
             {
                 "nama": "Orangutan Sumatra",
-                "image": "https://www.rekoforest.org/wp-content/uploads/2019/05/RER-Sumatran-Tiger-4a.jpg"
+                "spesies": "Pongo abelii",
+                "asal": "Sumatra",
+                "keterangan": "Primata cerdas, hidup di hutan hujan tropis"
             }
         ],
         "flora": [
             {
                 "nama": "Rafflesia",
-                "image": "https://www.rekoforest.org/wp-content/uploads/2019/05/RER-Sumatran-Tiger-4a.jpg"
+                "spesies": "Rafflesia arnoldii",
+                "asal": "Sumatra",
+                "keterangan": "Bunga terbesar di dunia, tidak berakar/berdaun"
             },
             {
                 "nama": "Bunga Bangkai",
-                "image": "https://www.rekoforest.org/wp-content/uploads/2019/05/RER-Sumatran-Tiger-4a.jpg"
+                "spesies": "Amorphophallus titanum",
+                "asal": "Sumatra",
+                "keterangan": "Mengeluarkan bau busuk untuk menarik serangga"
             },
             {
                 "nama": "Sialang",
-                "image": "https://www.rekoforest.org/wp-content/uploads/2019/05/RER-Sumatran-Tiger-4a.jpg"
-            },
-            {
-                "nama": "Ramin",
-                "spesies": "Gonystylus bancanus",
+                "spesies": "Koompassia excelsa",
                 "asal": "Sumatra",
-                "keterangan": "Kayu keras dari hutan rawa gambut"
-            },
-            {
-                "nama": "Jelutung rawa",
-                "spesies": "Dyera polyphylla",
-                "asal": "Sumatra",
-                "keterangan": "Pohon penghasil getah, hidup di lahan gambut"
+                "keterangan": "Pohon tinggi tempat lebah madu liar bersarang"
             }
         ]
     },
@@ -60,18 +60,6 @@
                 "spesies": "Neofelis diardi borneensis",
                 "asal": "Kalimantan",
                 "keterangan": "Kucing besar bertutul, hidup di pohon"
-            },
-            {
-                "nama": "Beruang Madu",
-                "spesies": "Helarctos malayanus",
-                "asal": "Kalimantan",
-                "keterangan": "Beruang kecil pemakan madu dan serangga"
-            },
-            {
-                "nama": "Lutung merah",
-                "spesies": "Presbytis rubicunda",
-                "asal": "Kalimantan",
-                "keterangan": "Primata dengan bulu kemerahan, pemalu"
             }
         ],
         "flora": [
@@ -92,18 +80,6 @@
                 "spesies": "Shorea spp.",
                 "asal": "Kalimantan",
                 "keterangan": "Penghasil lemak nabati dari biji"
-            },
-            {
-                "nama": "Ramin",
-                "spesies": "Gonystylus bancanus",
-                "asal": "Kalimantan",
-                "keterangan": "Kayu bernilai tinggi, juga ditemukan di Sumatra"
-            },
-            {
-                "nama": "Belian",
-                "spesies": "Eusideroxylon spp.",
-                "asal": "Kalimantan",
-                "keterangan": "Kayu yang sulit lapuk, digunakan untuk bangunan"
             }
         ]
     },
@@ -126,18 +102,6 @@
                 "spesies": "Trachypithecus auratus",
                 "asal": "Jawa",
                 "keterangan": "Primata dengan warna abu-abu/hitam"
-            },
-            {
-                "nama": "Kukang Jawa",
-                "spesies": "Nycticebus javanicus",
-                "asal": "Jawa",
-                "keterangan": "Primata kecil, aktif malam, terancam perburuan"
-            },
-            {
-                "nama": "Trulek Jawa",
-                "spesies": "Vanellus macropterus",
-                "asal": "Jawa",
-                "keterangan": "Burung rawa, sangat langka"
             }
         ],
         "flora": [
@@ -158,18 +122,6 @@
                 "spesies": "Acacia auriculiformis",
                 "asal": "Jawa",
                 "keterangan": "Sering ditanam untuk reboisasi"
-            },
-            {
-                "nama": "Damar",
-                "spesies": "Agathis dammara",
-                "asal": "Jawa",
-                "keterangan": "Pohon penghasil getah damar"
-            },
-            {
-                "nama": "Cemara gunung",
-                "spesies": "Casuarina junghuhniana",
-                "asal": "Jawa",
-                "keterangan": "Tumbuh di lereng-lereng gunung"
             }
         ]
     },
@@ -192,18 +144,6 @@
                 "spesies": "Tarsius tarsier",
                 "asal": "Sulawesi",
                 "keterangan": "Primata kecil bermata besar, aktif malam"
-            },
-            {
-                "nama": "Maleo",
-                "spesies": "Macrocephalon maleo",
-                "asal": "Sulawesi",
-                "keterangan": "Burung endemik yang bertelur di pasir panas"
-            },
-            {
-                "nama": "Kuskus Beruang",
-                "spesies": "Ailurops ursinus",
-                "asal": "Sulawesi",
-                "keterangan": "Marsupial arboreal yang mirip beruang kecil"
             }
         ],
         "flora": [
@@ -224,18 +164,6 @@
                 "spesies": "Michelia champaca",
                 "asal": "Sulawesi",
                 "keterangan": "Tumbuhan berbunga harum"
-            },
-            {
-                "nama": "Anggrek Sulawesi",
-                "spesies": "Dendrobium spp.",
-                "asal": "Sulawesi",
-                "keterangan": "Spesies endemik tumbuh di dataran tinggi"
-            },
-            {
-                "nama": "Ketapang laut",
-                "spesies": "Terminalia catappa",
-                "asal": "Sulawesi",
-                "keterangan": "Tumbuh di pesisir dan dataran rendah"
             }
         ]
     },
@@ -258,18 +186,6 @@
                 "spesies": "Dendrolagus spp.",
                 "asal": "Papua",
                 "keterangan": "Marsupial pemanjat pohon, unik dari Papua"
-            },
-            {
-                "nama": "Kuskus Papua",
-                "spesies": "Phalanger spp.",
-                "asal": "Papua",
-                "keterangan": "Mamalia berkantung, arboreal"
-            },
-            {
-                "nama": "Buaya Papua",
-                "spesies": "Crocodylus novaeguineae",
-                "asal": "Papua",
-                "keterangan": "Buaya air tawar endemik"
             }
         ],
         "flora": [
@@ -290,18 +206,6 @@
                 "spesies": "Intsia bijuga",
                 "asal": "Papua",
                 "keterangan": "Kayu keras dan berat, bernilai tinggi"
-            },
-            {
-                "nama": "Buah merah",
-                "spesies": "Pandanus conoideus",
-                "asal": "Papua",
-                "keterangan": "Buah khas dengan manfaat kesehatan"
-            },
-            {
-                "nama": "Sagu liar",
-                "spesies": "Metroxylon sagu",
-                "asal": "Papua",
-                "keterangan": "Tanaman pangan utama masyarakat Papua"
             }
         ]
     }
