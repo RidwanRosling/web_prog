@@ -1,131 +1,111 @@
 import "./style.css";
-// import {closeModal, openModal} from "./app.js";
 
 document.querySelector("#app").innerHTML = `
-   <nav class="navbar">
-      <div class="navbar-brand">
-        <a>Wild Voice</a>
-      </div>
-      <ul class="navbar-links">
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Species</a></li>
-        <li class="show-aboutUs"><a href="#">About us</a></li>
-        <li><a id="login" href="#">Login</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a>Wild Voice</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Species</a></li>
+      <li class="show-aboutUs"><a href="#">About us</a></li>
+      <li><a id="login" href="#">Login</a></li>
+    </ul>
+  </nav>
 
-    <!-- Landing Section -->
-    <div class="container">
-      <div class="sideText">
-        <h1>
-          Forest Ranger: <br />
-          Endangered Species of Indonesia
-        </h1>
-        <p>Suara alam liar: spesies darat yang terancam punah</p>
-
-        <div class="button-explore">
-          <div class="explore">More Info</div>
-          <div class="arrow-right"></div>
-        </div>
+  <div class="container">
+    <div class="sideText">
+      <h1>Forest Ranger:<br />Endangered Species of Indonesia</h1>
+      <p>Suara alam liar: spesies darat yang terancam punah</p>
+      <div class="button-explore">
+        <div class="explore">More Info</div>
+        <div class="arrow-right"></div>
       </div>
     </div>
+  </div>
 
-    <div id="pop-up" class="modal hidden" >
-      <button class="close-aboutUs">&times;</button>
-      <h1 class="h1-aboutUs">About Us</h1>
-      <p class="p-aboutUs">
-        Disini adalah about us
-      </p>
-    </div>
+  <div id="pop-up" class="modal hidden">
+    <button class="close-aboutUs">&times;</button>
+    <h1 class="h1-aboutUs">About Us</h1>
+    <p class="p-aboutUs">Disini adalah about us</p>
+  </div>
 
-    <div class="overlay hidden"></div>
+  <div class="overlay hidden"></div>
 
-    <!-- Flora and Fauna text start -->
+  <div class="bacthed-container">
     <div class="container-flora-fauna">
-      <h1>Endangered Specieses</h1>
+      <h1>Endangered Species</h1>
       <div class="flora-fauna">
-          <h2>Flora</h2>
-          <h2>Fauna</h2>
+        <span data-region="Sumatra" class="btn-filter">Sumatra</span>
+        <span data-region="Kalimantan" class="btn-filter">Kalimantan</span>
+        <span data-region="Jawa" class="btn-filter">Jawa</span>
+        <span data-region="Sulawesi" class="btn-filter">Sulawesi</span>
+        <span data-region="Papua" class="btn-filter">Papua</span>
       </div>
     </div>
-    <!-- Flora and Fauna text end -->
 
-    <!-- Flora Card Start-->
-      <div class="card-container">
-      </div>
-    <!-- Flora Card end-->
+    <div class="card-container"></div>
+  </div>
 `;
+
+let allData = {};
 
 fetch("img.json")
   .then((response) => response.json())
   .then((data) => {
-    const sumatraData = data.Sumatra;
-    const kalimantanData = data.Kalimantan;
-    const jawaData = data.Jawa;
-    const sulawesiData = data.Sulawesi;
-    const papuaData = data.Papua;
+    allData = data;
+    renderRegion("Sumatra");
 
-    // Ambil flora
-    const faunaList = sumatraData.fauna;
-    faunaList.forEach((fauna) => {
-      console.log(
-        `Nama: ${fauna.nama}, Spesies: ${fauna.spesies}, Asal: ${fauna.asal}`
-      );
-
-      // Bisa insert ke DOM
-      const faunaList = document.querySelector(".card-container");
-      faunaList.innerHTML += `
-        <img src="${fauna.image}" alt="${fauna.nama}" class="fauna-card-${fauna.id}">
-      `;
-    });
-    // Ambil fauna
-    const floraList = sumatraData.flora;
-    floraList.forEach((flora) => {
-      console.log(
-        `Nama: ${flora.nama}, Spesies: ${flora.spesies}, Asal: ${flora.asal}`
-      );
-
-      // Bisa insert ke DOM
-      const floraContainer = document.querySelector(".card-container");
-      floraContainer.innerHTML += `
-        <img src="${flora.image}" alt="${flora.nama}" class="flora-card-${flora.id}">
-      `;
+    const spans = document.querySelectorAll(".btn-filter");
+    spans.forEach((span) => {
+      span.addEventListener("click", () => {
+        const region = span.dataset.region;
+        renderRegion(region);
+      });
     });
   })
   .catch((error) => console.error("Gagal memuat JSON:", error));
 
-// 2. Ambil elemen yang kita butuhkan
+function renderRegion(regionName) {
+  const container = document.querySelector(".card-container");
+  container.innerHTML = ""; // kosongkan sebelumnya
+
+  const region = allData[regionName];
+  if (!region) return;
+
+  region.fauna.forEach((fauna) => {
+    container.innerHTML += `
+      <img src="${fauna.image}" alt="${fauna.nama}" class="fauna-card-${fauna.id}">
+    `;
+  });
+
+  region.flora.forEach((flora) => {
+    container.innerHTML += `
+      <img src="${flora.image}" alt="${flora.nama}" class="flora-card-${flora.id}">
+    `;
+  });
+}
+
+// Modal logic
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-aboutUs");
 const btnOpenModal = document.querySelectorAll(".show-aboutUs");
 
-// 3. Definisi fungsi
 const openModal = function () {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
-
 const closeModal = function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 };
 
-// 4. Event binding
-// 4a. Tombol “About us”
 btnOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
-
-// 4b. Tombol ✕ dan overlay background
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
-
-// 4c. Tutup dengan Escape
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
     closeModal();
   }
 });
-
-// 5. Jika ingin modalnya langsung tersembunyi di awal,
-//    pastikan class="hidden" sudah ada di HTML (sudah kita pakai).
-//    Jadi **tidak perlu** memanggil closeModal() lagi di sini.
