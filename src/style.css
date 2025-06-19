@@ -190,3 +190,17 @@ html {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+.container-flora-fauna {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flora-fauna {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}

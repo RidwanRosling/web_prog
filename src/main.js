@@ -39,6 +39,20 @@ document.querySelector("#app").innerHTML = `
     </div>
 
     <div class="overlay hidden"></div>
+
+    <!-- Flora and Fauna Section -->
+    <se
+    <div class="container-flora-fauna">
+      <h1>Endangered Specieses</h1>
+      <div class="flora-fauna">
+        <div class="flora">
+          <h2>Flora</h2>
+        </div>
+        <div class="fauna">
+          <h2>Fauna</h2>
+        </div>
+      </div>
+    </div
 `;
 
 // 2. Ambil elemen yang kita butuhkan
