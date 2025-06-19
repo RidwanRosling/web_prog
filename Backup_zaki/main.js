@@ -10,7 +10,7 @@ document.querySelector("#app").innerHTML = `
         <li><a href="#">Support</a></li>
         <li><a href="#">Species</a></li>
         <li class="show-aboutUs"><a href="#">About us</a></li>
-        <li><a id="login" href="#">Login</a></li>
+        <li><a id="login" href="http://localhost/web_prog/public/php-login/login.php">login</a></li>
       </ul>
     </nav>
 
@@ -85,17 +85,66 @@ document.querySelector("#app").innerHTML = `
           </div>
 
         </div>
-      </div>
-      <div id="contactUs">
-        <p>
-          Email Us <br>
-          19241817@bsi.ac.id
-        </p>
       </div>  
     </div>
 
     <div class="overlay hidden"></div>
+
+  <div class="bacthed-container">
+    <div class="container-flora-fauna">
+      <h1>Endangered Species</h1>
+      <div class="flora-fauna">
+        <span data-region="Sumatra" class="btn-filter">Sumatra</span>
+        <span data-region="Kalimantan" class="btn-filter">Kalimantan</span>
+        <span data-region="Jawa" class="btn-filter">Jawa</span>
+        <span data-region="Sulawesi" class="btn-filter">Sulawesi</span>
+        <span data-region="Papua" class="btn-filter">Papua</span>
+      </div>
+    </div>
+
+    <div class="card-container"></div>
+  </div>
 `;
+
+let allData = {};
+
+fetch("img.json")
+  .then((response) => response.json())
+  .then((data) => {
+    allData = data;
+    renderRegion("Sumatra");
+
+    const spans = document.querySelectorAll(".btn-filter");
+    spans.forEach((span) => {
+      span.addEventListener("click", () => {
+        console.log(span.dataset.region); // ➜ "Sumatra"
+        const region = span.dataset.region;
+        renderRegion(region);
+      });
+    });
+  })
+  .catch((error) => console.error("Gagal memuat JSON:", error));
+
+function renderRegion(regionName) {
+  const container = document.querySelector(".card-container");
+  container.innerHTML = "";
+
+  const region = allData[regionName];
+  if (!region) return;
+
+  region.fauna.forEach((fauna) => {
+    container.innerHTML += `
+      <img src="${fauna.image}" alt="${fauna.nama}" class="fauna-card-${fauna.id}">
+    `;
+  });
+
+  region.flora.forEach((flora) => {
+    container.innerHTML += `
+      <img src="${flora.image}" alt="${flora.nama}" class="flora-card-${flora.id}">
+    `;
+  });
+}
+
 
 // 2. Ambil elemen yang kita butuhkan
 const modal = document.querySelector(".modal");
