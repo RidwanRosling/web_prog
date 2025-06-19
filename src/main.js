@@ -1,5 +1,5 @@
 import "./style.css";
-import { closeModal, openModal } from "./app.js";
+// import {closeModal, openModal} from "./app.js";
 
 document.querySelector("#app").innerHTML = `
    <nav class="navbar">
@@ -29,18 +29,35 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
     </div>
-
-    
-    <div class="modal hidden">
-      <button class="close-aboutUs">>&times;</button>
-      <h1>About Us</h1>
-      <p>
-        Testing 123
-      </p>
-    </div>
-
-    <div class="overlay hidden"></div>
 `;
 
 // setupCounter(document.querySelector("#counter"));
 closeModal(document.querySelector(".close-aboutUs"));
+
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const btnCloseModel = document.querySelector(".close-aboutUs");
+const btnOpenModal = document.querySelectorAll(".show-aboutUs");
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+for (let i = 0; i < btnOpenModal.length; i++)
+  btnOpenModal[i].addEventListener("click", openModal);
+
+btnCloseModel.addEventListener("click", closeModal);
+
+overlay.addEventListener("click", closeModal);
+
+document.querySelector("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
