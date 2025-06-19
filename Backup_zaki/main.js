@@ -32,8 +32,55 @@ document.querySelector("#app").innerHTML = `
 
     <div id="pop-up" class="modal hidden" >
       <button class="close-aboutUs">&times;</button>
-      <h1 class="h1-aboutUs">About Us</h1>
-      <p class="p-aboutUs">
+
+      <div class="slider">
+        <div class="slide-track">
+          
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot1.jpg"/>
+          </div>
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot2.jpg"/>
+          </div>
+          
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot3.jpg"/>
+          </div>      
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot4.jpg"/>
+          </div>
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot5.jpg"/>
+          </div>
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot1.jpg"/>
+          </div>
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot2.jpg"/>
+          </div>
+          
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot3.jpg"/>
+          </div>      
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot4.jpg"/>
+          </div>
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot5.jpg"/>
+          </div>
+
+        </div>
+      </div>  
+
+      <h1 class="aboutUs-txt" id="aboutUs">About Us</h1>
+      <p class="aboutUs-txt" id="test">
         Disini adalah about us
       </p>
     </div>
