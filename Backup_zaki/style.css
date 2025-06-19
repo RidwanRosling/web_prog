@@ -7,6 +7,12 @@ html {
   overflow-x: hidden;
 }
 
+#logo {
+  margin-top: 25px;
+  left: 150px;
+  width: 125px;
+}
+
 /* navbar section start */
 .navbar {
   margin-top: 8px;

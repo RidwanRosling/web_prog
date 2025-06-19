@@ -4,7 +4,7 @@ import "./style.css";
 document.querySelector("#app").innerHTML = `
    <nav class="navbar">
       <div class="navbar-brand">
-        <a>Wild Voice</a>
+        <img src="./Backup_zaki/images/Forest_Ranger.PNG" id="logo">
       </div>
       <ul class="navbar-links">
         <li><a href="#">Support</a></li>
