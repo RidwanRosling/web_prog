@@ -1,0 +1,134 @@
+{
+    "Sumatra": {
+        "fauna": [
+            {
+                "nama": "Harimau Sumatra",
+                "spesies": "Panthera tigris sumatrae",
+                "asal": "Sumatra",
+                "keterangan": "Subspesies harimau terakhir di Indonesia"
+            },
+            {
+                "nama": "Gajah Sumatra",
+                "spesies": "Elephas maximus sumatranus",
+                "asal": "Sumatra",
+                "keterangan": "Herbivora besar, populasinya semakin menyusut"
+            },
+            {
+                "nama": "Orangutan Sumatra",
+                "spesies": "Pongo abelii",
+                "asal": "Sumatra",
+                "keterangan": "Primata cerdas, hidup di hutan hujan tropis"
+            },
+            {
+                "nama": "Tapir Asia",
+                "spesies": "Tapirus indicus",
+                "asal": "Sumatra",
+                "keterangan": "Mamalia bertubuh besar, nokturnal"
+            },
+            {
+                "nama": "Trenggiling",
+                "spesies": "Manis javanica",
+                "asal": "Sumatra",
+                "keterangan": "Pemakan semut, bersisik, sering diburu ilegal"
+            }
+        ],
+        "flora": [
+            {
+                "nama": "Rafflesia",
+                "spesies": "Rafflesia arnoldii",
+                "asal": "Sumatra",
+                "keterangan": "Bunga terbesar di dunia, tidak berakar/berdaun"
+            },
+            {
+                "nama": "Bunga Bangkai",
+                "spesies": "Amorphophallus titanum",
+                "asal": "Sumatra",
+                "keterangan": "Mengeluarkan bau busuk untuk menarik serangga"
+            },
+            {
+                "nama": "Sialang",
+                "spesies": "Koompassia excelsa",
+                "asal": "Sumatra",
+                "keterangan": "Pohon tinggi tempat lebah madu liar bersarang"
+            },
+            {
+                "nama": "Ramin",
+                "spesies": "Gonystylus bancanus",
+                "asal": "Sumatra",
+                "keterangan": "Kayu keras dari hutan rawa gambut"
+            },
+            {
+                "nama": "Jelutung rawa",
+                "spesies": "Dyera polyphylla",
+                "asal": "Sumatra",
+                "keterangan": "Pohon penghasil getah, hidup di lahan gambut"
+            }
+        ]
+    },
+    "Kalimantan": {
+        "fauna": [
+            {
+                "nama": "Orangutan Kalimantan",
+                "spesies": "Pongo pygmaeus",
+                "asal": "Kalimantan",
+                "keterangan": "Primata besar, dilindungi, sangat cerdas"
+            },
+            {
+                "nama": "Bekantan",
+                "spesies": "Nasalis larvatus",
+                "asal": "Kalimantan",
+                "keterangan": "Monyet berhidung panjang, hidup di hutan bakau"
+            },
+            {
+                "nama": "Macan Dahan",
+                "spesies": "Neofelis diardi borneensis",
+                "asal": "Kalimantan",
+                "keterangan": "Kucing besar bertutul, hidup di pohon"
+            },
+            {
+                "nama": "Beruang Madu",
+                "spesies": "Helarctos malayanus",
+                "asal": "Kalimantan",
+                "keterangan": "Beruang kecil pemakan madu dan serangga"
+            },
+            {
+                "nama": "Lutung merah",
+                "spesies": "Presbytis rubicunda",
+                "asal": "Kalimantan",
+                "keterangan": "Primata dengan bulu kemerahan, pemalu"
+            }
+        ],
+        "flora": [
+            {
+                "nama": "Kayu Ulin",
+                "spesies": "Eusideroxylon zwageri",
+                "asal": "Kalimantan",
+                "keterangan": "Kayu besi, sangat keras dan tahan air"
+            },
+            {
+                "nama": "Anggrek Hitam",
+                "spesies": "Coelogyne pandurata",
+                "asal": "Kalimantan",
+                "keterangan": "Endemik Kalimantan Timur"
+            },
+            {
+                "nama": "Tengkawang",
+                "spesies": "Shorea spp.",
+                "asal": "Kalimantan",
+                "keterangan": "Penghasil lemak nabati dari biji"
+            },
+            {
+                "nama": "Ramin",
+                "spesies": "Gonystylus bancanus",
+                "asal": "Kalimantan",
+                "keterangan": "Kayu bernilai tinggi, juga ditemukan di Sumatra"
+            },
+            {
+                "nama": "Belian",
+                "spesies": "Eusideroxylon spp.",
+                "asal": "Kalimantan",
+                "keterangan": "Kayu yang sulit lapuk, digunakan untuk bangunan"
+            }
+        ]
+    }
+}
