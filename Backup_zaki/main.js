@@ -43,11 +43,11 @@ document.querySelector("#app").innerHTML = `
         <div class="slide-track">
           
           <div class="slide">
-            <img src="./Backup_zaki/images/badak sumatera.jpeg"/ class="slide-img">
+            <img src="./Backup_zaki/images/badak sumatera.JPEG"/ class="slide-img">
           </div>
 
           <div class="slide">
-            <img src="./Backup_zaki/images/burung cendrawasih.jpg"/ class="slide-img">
+            <img src="./Backup_zaki/images/burung cenderawasih.jpg"/ class="slide-img">
           </div>
           
           <div class="slide">
@@ -62,11 +62,11 @@ document.querySelector("#app").innerHTML = `
             <img src="./Backup_zaki/images/orang utan.JPG"/ class="slide-img">
           </div>
           <div class="slide">
-            <img src="./Backup_zaki/images/badak sumatera.jpg"/ class="slide-img">
+            <img src="./Backup_zaki/images/badak sumatera.JPEG"/ class="slide-img">
           </div>
 
           <div class="slide">
-            <img src="./Backup_zaki/images/burung cendrawasih.jpg"/ class="slide-img">
+            <img src="./Backup_zaki/images/burung cenderawasih.jpg"/ class="slide-img">
           </div>
           
           <div class="slide">
