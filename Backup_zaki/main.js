@@ -18,13 +18,13 @@ document.querySelector("#app").innerHTML = `
     <div class="container">
       <div class="sideText">
         <h1>
-          Forest Ranger: <br />
+          Forest Ranger: <br/>
           Endangered Species of Indonesia
         </h1>
         <p>Suara alam liar: spesies darat yang terancam punah</p>
 
         <div class="button-explore">
-          <div class="explore">More Info</div>
+          <div class="explore"><a href="#next" id="info-txt">More Info</a></div>
           <div class="arrow-right"></div>
         </div>
       </div>
@@ -40,7 +40,12 @@ document.querySelector("#app").innerHTML = `
       </p>
       <p class="aboutUs-txt">
         Kami percaya setiap makhluk memiliki cerita yang layak untuk dibagikan melalui gambar. Misi kami adalah menyuarakan alam,
-        mendukung pelestarian, dan menginspirasi masyarakat untuk melindungi keanekaragaman hayati demi masa depan
+        mendukung pelestarian, dan menginspirasi masyarakat untuk melindungi keanekaragaman hayati demi masa depan.
+      </p>
+      <p class="aboutUs-txt">
+        Melalui pendekatan visual dan edukatif, kami menghubungkan masyarakat dengan alam liar Indonesia dari hutan tropis hingga
+        pegunungan yang menjadi rumah bagi satwa terancam punah.
+        Kami berkomitmen menjadi jembatan antara manusia dan alam, serta mengajak semua orang untuk menjadi bagian dari perubahan positif dalam menjaga kehidupan liar.
       </p>
       <div class="slider">
         <div class="slide-track">
@@ -90,7 +95,7 @@ document.querySelector("#app").innerHTML = `
 
     <div class="overlay hidden"></div>
 
-  <div class="bacthed-container">
+  <div class="bacthed-container" id="next">
     <div class="container-flora-fauna">
       <h1>Endangered Species</h1>
       <div class="flora-fauna">
