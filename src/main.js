@@ -30,7 +30,7 @@ document.querySelector("#app").innerHTML = `
       </div>
     </div>
 
-    <div class="modal hidden">
+    <div id="pop-up" class="modal hidden" >
       <button class="close-aboutUs">&times;</button>
       <h1 class="h1-aboutUs">About Us</h1>
       <p class="p-aboutUs">

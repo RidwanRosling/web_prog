@@ -190,3 +190,15 @@ html {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+#pop-up {
+  top: -400px;
+  animation: drop 0.5s ease forwards
+  
+}
+
+@keyframes drop{
+  0%{opacity: 0;}
+  70%{ transform: translateY(700px)}
+  100% {transform: translateY(650px); opacity: 1;}
+}
