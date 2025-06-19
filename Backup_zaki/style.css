@@ -11,7 +11,7 @@ html {
 .navbar {
   margin-top: 8px;
   color: #3f4f44;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -103,7 +103,7 @@ html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: url("/hayam_wuruk.jpg");
+  background-image: url("/forest.jpg");
   background-size: cover;
   background-position: center;
   align-items: flex-end;
@@ -211,6 +211,7 @@ html {
 }
 
 .slider {
+  margin-top: 25px;
   height: 200px;
   overflow: hidden;
   position: relative;
@@ -276,5 +277,9 @@ html {
   font-family: sans-serif;
   position: absolute;
   right: 2rem;
+  font-weight: bold;
+}
+
+#p1 {
   font-weight: bold;
 }

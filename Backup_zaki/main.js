@@ -35,9 +35,12 @@ document.querySelector("#app").innerHTML = `
 
       
       <h1 class="aboutUs-txt" id="aboutUs">About Us</h1>
+      <p class="aboutUs-txt" id="p1">
+        Forest ranger adalah platform digital yang bertujuan meningkatkan kesadaran tentang spesies langka di indonesia.
+      </p>
       <p class="aboutUs-txt">
-        Wild Voice is a community-driven platform to amplify the stories of Indonesia’s endangered species. 
-        We believe that sharing voices can lead to stronger conservation.
+        Kami percaya setiap makhluk memiliki cerita yang layak untuk dibagikan melalui gambar. Misi kami adalah menyuarakan alam,
+        mendukung pelestarian, dan menginspirasi masyarakat untuk melindungi keanekaragaman hayati demi masa depan
       </p>
       <div class="slider">
         <div class="slide-track">
