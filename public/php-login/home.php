@@ -1,8 +1,8 @@
 <?php 
     session_start();
-    include("php/login.php");
+    include("conn.php");
     if(!isset($_SESSION['valid'])){
-        header("Location: index.php");
+        header("Location: login.php");
     }
 ?>
 <!DOCTYPE html>
@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <button id="loginBtn">Login</button>
 </head>
 <body>
     <nav class="nav">
@@ -22,16 +23,13 @@
             <?php
             $id = $_SESSION['id'];
             $query = mysqli_query($conn, "SELECT * FROM users WHERE id='$id'");
-
+            
             while($result = mysqli_fetch_assoc($query)){
                 $resname = $result['Username'];
                 $resemail = $result['Email'];
                 $resage = $result['Age'];
-                $resid = $result['Id'];
-
+                $resid = $result['id'];
             }
-            
-            echo "<a href='edit.php?Id='$'>Change Profile</a>";
             ?>
             <a href="edit.php">Change Profile</a>
             <a href="logout.php"> <button class="btn">Log Out</button></a>

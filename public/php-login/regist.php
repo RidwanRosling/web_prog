@@ -9,10 +9,9 @@
 <body>
     <di class="container">
         <div class="box form-box">
-        
         <?php
-        include("php/login.php");
-    if(isset($_POST['submit'])){
+        include("conn.php");
+        if(isset($_POST['submit'])){
             $username = $_POST['username'];
             $email = $_POST['email'];
             $age = $_POST['age'];
@@ -33,7 +32,7 @@
             echo "<div class='message'>
                     <p>Registration Succesfully!!</p>
                 </div> <br>";
-            echo "<a href='index.php'><button class='btn'>Login Now</button>";
+            echo "<a href='login.php'><button class='btn'>Login Now</button>";
         }
 
         }else{
@@ -56,13 +55,13 @@
                 </div>
                 <div class="field input">
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password" placeholder="Enter Password" required><br>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
                 </div>
                 <div class="field">
                     <input type="submit" class="btn" name="submit" value="Register" required>
                 </div>
                 <div class="links">
-                    Already Have Account? <a href="index.php">Sign In!</a>
+                    Already Have Account? <a href="login.php">Sign In!</a>
                 </div>
             </form>
         </div>

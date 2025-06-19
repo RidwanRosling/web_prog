@@ -1,8 +1,8 @@
 <?php 
     session_start();
-    include("php/login.php");
+    include("conn.php");
     if(!isset($_SESSION['valid'])){
-        header("Location: index.php");
+        header("Location: login.php");
     }
 ?>
 <!DOCTYPE html>

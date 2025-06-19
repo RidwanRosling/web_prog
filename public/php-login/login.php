@@ -13,24 +13,24 @@
     <div class="container">
         <div class="box form-box">
             <?php
-            include("php/login.php");
+            include("conn.php");
             if(isset($_POST['submit'])){
                 $email = mysqli_real_escape_string($conn,$_POST['email']);
                 $password = mysqli_real_escape_string($conn,$_POST['password']);
 
-                $result = mysqli_query($conn, "SELECT * FROM users WHERE Email='$email' AND Password='$password'") or die ("Select Eroooooor");
+                $result = mysqli_query($conn, "SELECT * FROM users WHERE email='$email' AND Password='$password'") or die ("Select Eroooooor");
                 $row = mysqli_fetch_assoc($result);
 
                 if(is_array($row) && !empty($row)){
-                    $_SESSION['valid'] = $row['Email'];
-                    $_SESSION['username'] = $row['Username'];
-                    $_SESSION['age'] = $row['Age'];
-                    $_SESSION['id'] = $row['Id'];
+                    $_SESSION['valid'] = $row['email'];
+                    $_SESSION['username'] = $row['username'];
+                    $_SESSION['age'] = $row['age'];
+                    $_SESSION['id'] = $row['id'];
                 }else{
                     echo "<div class='message'>
                         <p> Wrong Username or Password!</p>
                         </div> <br>";
-                    echo "<a href='index.php'><button class='btn'>Go Back</button></a>";
+                    echo "<a href='login.php'><button class='btn'>Go Back</button></a>";
                 }
                 if(isset($_SESSION['valid'])){
                     header("Location: home.php");
@@ -46,7 +46,7 @@
                 </div>
                 <div class="field input">
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password" placeholder="Enter Password" autocomplete="off" required><br>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" autocomplete="off" required><br>
                 </div>
                 <div class="field">
                     <input type="submit" class="btn" name="submit" value="Login" required>
