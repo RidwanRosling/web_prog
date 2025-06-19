@@ -60,6 +60,10 @@ fetch("img.json")
   .then((response) => response.json())
   .then((data) => {
     const sumatraData = data.Sumatra;
+    const kalimantanData = data.Kalimantan;
+    const jawaData = data.Jawa;
+    const sulawesiData = data.Sulawesi;
+    const papuaData = data.Papua;
 
     // Ambil flora
     const faunaList = sumatraData.fauna;
@@ -69,9 +73,22 @@ fetch("img.json")
       );
 
       // Bisa insert ke DOM
-      const faunaContainer = document.querySelector(".card-container");
-      faunaContainer.innerHTML += `
-        <img src="${fauna.image}" alt="${fauna.nama}" class="flora-card-${fauna.Id}">
+      const faunaList = document.querySelector(".card-container");
+      faunaList.innerHTML += `
+        <img src="${fauna.image}" alt="${fauna.nama}" class="fauna-card-${fauna.id}">
+      `;
+    });
+    // Ambil fauna
+    const floraList = sumatraData.flora;
+    floraList.forEach((flora) => {
+      console.log(
+        `Nama: ${flora.nama}, Spesies: ${flora.spesies}, Asal: ${flora.asal}`
+      );
+
+      // Bisa insert ke DOM
+      const floraContainer = document.querySelector(".card-container");
+      floraContainer.innerHTML += `
+        <img src="${flora.image}" alt="${flora.nama}" class="flora-card-${flora.id}">
       `;
     });
   })
