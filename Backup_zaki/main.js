@@ -33,56 +33,63 @@ document.querySelector("#app").innerHTML = `
     <div id="pop-up" class="modal hidden" >
       <button class="close-aboutUs">&times;</button>
 
+      
+      <h1 class="aboutUs-txt" id="aboutUs">About Us</h1>
+      <p class="aboutUs-txt">
+        Wild Voice is a community-driven platform to amplify the stories of Indonesia’s endangered species. 
+        We believe that sharing voices can lead to stronger conservation.
+      </p>
       <div class="slider">
         <div class="slide-track">
           
           <div class="slide">
-            <img src="./Backup_zaki/images/fot1.jpg"/>
+            <img src="./Backup_zaki/images/fot1.jpg"/ class="slide-img">
           </div>
 
           <div class="slide">
-            <img src="./Backup_zaki/images/fot2.jpg"/>
-          </div>
-          
-          <div class="slide">
-            <img src="./Backup_zaki/images/fot3.jpg"/>
-          </div>      
-
-          <div class="slide">
-            <img src="./Backup_zaki/images/fot4.jpg"/>
-          </div>
-
-          <div class="slide">
-            <img src="./Backup_zaki/images/fot5.jpg"/>
-          </div>
-
-          <div class="slide">
-            <img src="./Backup_zaki/images/fot1.jpg"/>
-          </div>
-
-          <div class="slide">
-            <img src="./Backup_zaki/images/fot2.jpg"/>
+            <img src="./Backup_zaki/images/fot2.jpg"/ class="slide-img">
           </div>
           
           <div class="slide">
-            <img src="./Backup_zaki/images/fot3.jpg"/>
+            <img src="./Backup_zaki/images/fot3.jpg"/ class="slide-img">
           </div>      
 
           <div class="slide">
-            <img src="./Backup_zaki/images/fot4.jpg"/>
+            <img src="./Backup_zaki/images/fot4.jpg"/ class="slide-img">
           </div>
 
           <div class="slide">
-            <img src="./Backup_zaki/images/fot5.jpg"/>
+            <img src="./Backup_zaki/images/fot5.jpg"/ class="slide-img">
+          </div>
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot1.jpg"/ class="slide-img">
+          </div>
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot2.jpg"/ class="slide-img">
+          </div>
+          
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot3.jpg"/ class="slide-img">
+          </div>      
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot4.jpg"/ class="slide-img">
+          </div>
+
+          <div class="slide">
+            <img src="./Backup_zaki/images/fot5.jpg"/ class="slide-img">
           </div>
 
         </div>
+      </div>
+      <div id="contactUs">
+        <p>
+          Email Us <br>
+          19241817@bsi.ac.id
+        </p>
       </div>  
-
-      <h1 class="aboutUs-txt" id="aboutUs">About Us</h1>
-      <p class="aboutUs-txt" id="test">
-        Disini adalah about us
-      </p>
     </div>
 
     <div class="overlay hidden"></div>
