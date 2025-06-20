@@ -1,3 +1,3 @@
 <?php
-    $conn = mysqli_connect("localhost", "root", "", "login") or die ("Couldnt connect");
+    $conn = mysqli_connect("localhost", "root", "", "donation") or die ("Couldnt connect");
 ?>
