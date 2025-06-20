@@ -5,6 +5,7 @@ html {
   text-decoration: none;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #logo {
@@ -147,6 +148,11 @@ html {
   justify-content: center;
   letter-spacing: 2px;
   border: 2px solid #ffff;
+}
+
+#info-txt {
+  text-decoration: none; /* removes underline */
+  color: inherit;         /* uses the parent text color */
 }
 /* 
 .hero_section {

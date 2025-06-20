@@ -10,7 +10,7 @@ document.querySelector("#app").innerHTML = `
       <li><a href="#">Support</a></li>
       <li><a href="#flora-fauna">Species</a></li>
       <li class="show-aboutUs"><a href="#">About us</a></li>
-      <li><a id="login" href="http://localhost/web_prog/public/php-login/login.php">login</a></li>
+      <li><a id="login" href="http://localhost/web_prog/public/php-login/donate.php">login</a></li>
     </ul>
   </nav>
 
