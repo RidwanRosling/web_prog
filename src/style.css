@@ -36,11 +36,10 @@ button {
   transition: background-color 0.3s ease;
   color: #fff;
 }
-.navbar-brand {
-  font-size: x-large;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  margin-left: 4rem;
+.navbar-brand img {
+  width: 200px;
+  height: 59px;
+  object-fit: cover;
 }
 
 .navbar-links {
@@ -250,9 +249,9 @@ button {
   padding: 6px 10px;
   background-color: #2231623c;
   color: #fff;
-  backdrop-filter: blur(10px);
   letter-spacing: 2px;
-
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -269,9 +268,9 @@ button {
   padding: 6px 12px;
   background-color: #2231623c;
   color: #fff;
-  backdrop-filter: blur(10px);
   letter-spacing: 2px;
-
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -286,9 +285,9 @@ button {
   padding: 6px 10px;
   background-color: #2231623c;
   color: #fff;
-  backdrop-filter: blur(10px);
   letter-spacing: 2px;
-
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -329,9 +328,9 @@ button {
   padding: 6px 10px;
   background-color: #2231623c;
   color: #fff;
-  backdrop-filter: blur(10px);
   letter-spacing: 2px;
-
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -347,8 +346,9 @@ button {
   right: 8px;
   padding: 6px 12px;
   background-color: #2231623c;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   color: #fff;
-  backdrop-filter: blur(10px);
   letter-spacing: 2px;
   border: none;
   border-radius: 4px;
@@ -363,8 +363,9 @@ button {
   right: 8px;
   padding: 6px 10px;
   background-color: #2231623c;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   color: #fff;
-  backdrop-filter: blur(10px);
   letter-spacing: 2px;
 
   border: none;
@@ -431,7 +432,7 @@ button {
   transform: translate(-50%, -50%);
   width: 80%;
   max-width: 800px;
-  background: #fff;
+  background-color: #1f2039;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
@@ -453,6 +454,7 @@ button {
 
 .modal-text {
   flex: 1;
+  color: #fff;
 }
 
 .close-aboutUs {
@@ -463,25 +465,38 @@ button {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color: #fff;
+}
+.container-wave {
+  width: 100%;
+  line-height: 0;
+  margin-bottom: -2px; /* hilangkan garis putih di bawah wave jika ada */
+  overflow: hidden;
 }
 
+.svg-wave {
+  display: block;
+  width: 100%;
+  height: auto; /* batasi tinggi wave */
+  position: absolute;
+}
 footer {
   width: 100vw;
   height: 40vh;
   /* overflow: hidden; */
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   list-style: none;
-  background-image: url("vecteezy_wildlife-elk-in-forest-nature-landscape-vector-illustration_.jpg");
+  background-color: #1f2039;
   object-fit: cover;
   background-position: center;
 }
 
 .logo img {
   width: 260px;
-  height: 180px;
+  height: 100px;
   object-fit: cover;
   display: flex;
   justify-content: center;
@@ -502,9 +517,10 @@ footer {
 .nav-footer li a {
   text-decoration: none;
   list-style: none;
-  font-size: x-large;
+  font-size: large;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color: rgb(206, 233, 255);
+  color: #f5f5f5;
 }
 
 @keyframes drop {

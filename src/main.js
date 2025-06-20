@@ -1,10 +1,16 @@
 import "./style.css";
 
+const faLink = document.createElement("link");
+faLink.rel = "stylesheet";
+faLink.href =
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+document.head.appendChild(faLink);
+
 // Inject HTML awal
 document.querySelector("#app").innerHTML = `
   <nav class="navbar">
     <div class="navbar-brand">
-      <a>Wild Voice</a>
+      <img src="forestRanger.png" alt="Logo Forest Ranger"/>
     </div>
     <ul class="navbar-links">
       <li><a href="#">Support</a></li>
@@ -12,12 +18,13 @@ document.querySelector("#app").innerHTML = `
       <li class="show-aboutUs"><a href="#">About us</a></li>
       <li><a id="login" href="http://localhost/web_prog/public/php-login/donate.php">login</a></li>
     </ul>
+
   </nav>
 
   <div class="container">
     <div class="sideText">
       <h1>Forest Ranger:<br />Endangered Species of Indonesia</h1>
-      <p>Suara alam liar: spesies darat yang terancam punah</p>
+    <p>Step into the wild and be a voice for the voiceless — protect Indonesia’s <br> rare animals and unique plants before they disappear forever. <br> Your awareness is the first step toward conservation.</p>
       
     </div>
   </div>
@@ -40,14 +47,23 @@ document.querySelector("#app").innerHTML = `
     <div class="card-container"></div>
   </div>
 
-  <footer>
-    <div class="logo"><img src="images/Forest_Ranger.png"/></div>
 
-    <ul class="nav-footer"> 
+  <div class="container-wave">
+      <svg class="svg-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1f2039" fill-opacity="1" d="M0,32L24,37.3C48,43,96,53,144,85.3C192,117,240,171,288,192C336,213,384,203,432,192C480,181,528,171,576,154.7C624,139,672,117,720,133.3C768,149,816,203,864,192C912,181,960,107,1008,85.3C1056,64,1104,96,1152,117.3C1200,139,1248,149,1296,138.7C1344,128,1392,96,1416,80L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+  </div>
+  
+  <footer>
+    <div class="logo"><img src="forestRanger.png"/></div>
+
+    <ul class="nav-footer">
       <li><a href="#">Support</a></li>
       <li><a href="#flora-fauna">Species</a></li>
       <li class="show-aboutUs"><a href="#">About us</a></li>
-    </ul
+      <li><a href="#" class="logo-social-media"><i class="fa fa-youtube"></i></a></li>
+      <li><a href="#" class="logo-social-media"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#" class="logo-social-media"><i class="fa fa-twitter"></i></a></li>
+    </ul>
+
   </footer>
 `;
 
@@ -96,7 +112,7 @@ function renderRegion(regionName) {
           data-region="${regionName}" 
           data-img="${fauna.image}"
           data-type="fauna"
-        >Detail</button>
+        >Detail Info</button>
       </div>
     `;
   });
@@ -124,6 +140,7 @@ function renderRegion(regionName) {
       const type = btn.dataset.type;
       const imgUrl = btn.dataset.img;
       const item = ffData[region]?.[type]?.find((x) => x.nama === nama);
+      console.log(item);
       if (item) showDetailPopup(item, imgUrl);
       else alert("Data tidak ditemukan.");
     };
