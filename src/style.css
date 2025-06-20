@@ -6,6 +6,7 @@ html {
   overflow-x: hidden;
   list-style: none;
   text-decoration: none;
+  background-color: rgba(3, 10, 57, 0.81);
 }
 
 button {
@@ -62,6 +63,12 @@ button {
   color: #3f4f44;
   text-decoration: none;
   line-height: 1;
+  padding: 0.5rem 1rem;
+}
+.navbar-links a:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid black;
+  transition: 0.3s ease-in-out;
 }
 
 #login {
@@ -413,7 +420,7 @@ button {
   bottom: 0;
 }
 
-/* ========== OVERLAY & MODAL ========== */
+/* ========== OVERLAY & MODAL START========== */
 .overlay {
   position: fixed;
   top: 0;
@@ -421,7 +428,7 @@ button {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  display: none; /* disembunyikan default */
+  display: none;
   z-index: 900;
 }
 
@@ -467,19 +474,7 @@ button {
   cursor: pointer;
   color: #fff;
 }
-.container-wave {
-  width: 100%;
-  line-height: 0;
-  margin-bottom: -2px; /* hilangkan garis putih di bawah wave jika ada */
-  overflow: hidden;
-}
-
-.svg-wave {
-  display: block;
-  width: 100%;
-  height: auto; /* batasi tinggi wave */
-  position: absolute;
-}
+/* ========== OVERLAY & MODAL END========== */
 footer {
   width: 100vw;
   height: 40vh;
