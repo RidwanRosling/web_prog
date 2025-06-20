@@ -18,10 +18,7 @@ document.querySelector("#app").innerHTML = `
     <div class="sideText">
       <h1>Forest Ranger:<br />Endangered Species of Indonesia</h1>
       <p>Suara alam liar: spesies darat yang terancam punah</p>
-      <div class="button-explore">
-        <div class="explore">Species</div>
-        <div class="arrow-right"></div>
-      </div>
+      
     </div>
   </div>
 
@@ -42,6 +39,16 @@ document.querySelector("#app").innerHTML = `
 
     <div class="card-container"></div>
   </div>
+
+  <footer>
+    <div class="logo"><img src="images/Forest_Ranger.png"/></div>
+
+    <ul class="nav-footer"> 
+      <li><a href="#">Support</a></li>
+      <li><a href="#flora-fauna">Species</a></li>
+      <li class="show-aboutUs"><a href="#">About us</a></li>
+    </ul
+  </footer>
 `;
 
 // Variabel global
@@ -87,12 +94,12 @@ function renderRegion(regionName) {
           class="fauna-btn-detail-${fauna.id}" 
           data-nama="${fauna.nama}" 
           data-region="${regionName}" 
+          data-img="${fauna.image}"
           data-type="fauna"
         >Detail</button>
       </div>
     `;
   });
-
   // Flora
   region.flora.forEach((flora) => {
     container.innerHTML += `
@@ -102,76 +109,66 @@ function renderRegion(regionName) {
           class="flora-btn-detail-${flora.id}" 
           data-nama="${flora.nama}" 
           data-region="${regionName}" 
+          data-img="${flora.image}"
           data-type="flora"
         >Detail</button>
       </div>
     `;
   });
 
-  // Tambahkan event listener ke semua tombol detail yang punya data-type
-  document.querySelectorAll("button[data-type]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const nama = button.dataset.nama;
-      const region = button.dataset.region;
-      const type = button.dataset.type;
-
-      console.log("Klik tombol Detail:", { nama, region, type });
-
-      const item = ffData[region]?.[type]?.find((el) => el.nama === nama);
-      if (item) {
-        console.log("Data ditemukan:", item);
-        showDetailPopup(item);
-      } else {
-        console.warn(
-          "Data tidak ditemukan di FF.json untuk:",
-          nama,
-          region,
-          type
-        );
-        alert("Data tidak ditemukan.");
-      }
-    });
-  });
-
-  // Tampilkan modal popup
-  function showDetailPopup(data) {
-    const modal = document.querySelector(".modal");
-    const overlay = document.querySelector(".overlay");
-
-    modal.innerHTML = `
-    <button class="close-aboutUs">&times;</button>
-    <h1>${data.nama}</h1>
-    <p><strong>Spesies:</strong> ${data.spesies}</p>
-    <p><strong>Asal:</strong> ${data.asal}</p>
-    <p><strong>Keterangan:</strong> ${data.keterangan}</p>
-  `;
-
-    modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
-
-    document
-      .querySelector(".close-aboutUs")
-      .addEventListener("click", closeModal);
-    overlay.addEventListener("click", closeModal);
-  }
-
-  // Tutup modal
-  function closeModal() {
-    document.querySelector(".modal").classList.add("hidden");
-    document.querySelector(".overlay").classList.add("hidden");
-  }
-
-  // Scroll navbar style
-  window.addEventListener("scroll", () => {
-    const navbar = document.querySelector(".navbar");
-    const navbarLinks = document.querySelector(".navbar-links");
-
-    if (window.scrollY > 0) {
-      navbar.classList.add("scrolled");
-      navbarLinks.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-      navbarLinks.classList.remove("scrolled");
-    }
+  // pasang handler ke semua tombol detail
+  document.querySelectorAll("button[data-type]").forEach((btn) => {
+    btn.onclick = () => {
+      const nama = btn.dataset.nama;
+      const region = btn.dataset.region;
+      const type = btn.dataset.type;
+      const imgUrl = btn.dataset.img;
+      const item = ffData[region]?.[type]?.find((x) => x.nama === nama);
+      if (item) showDetailPopup(item, imgUrl);
+      else alert("Data tidak ditemukan.");
+    };
   });
 }
+
+function showDetailPopup(data, imageUrl) {
+  const modal = document.getElementById("pop-up");
+  const overlay = document.querySelector(".overlay");
+
+  modal.innerHTML = `
+    <button class="close-aboutUs">&times;</button>
+    <div class="modal-content">
+      <img src="${imageUrl}" alt="${data.nama}">
+      <div class="modal-text">
+        <h2>${data.nama}</h2>
+        <p><strong>Spesies:</strong> ${data.spesies}</p>
+        <p><strong>Asal:</strong> ${data.asal}</p>
+        <p><strong>Keterangan:</strong> ${data.keterangan}</p>
+      </div>
+    </div>
+  `;
+
+  modal.style.display = "block";
+  overlay.style.display = "block";
+
+  modal.querySelector(".close-aboutUs").onclick = closeModal;
+  overlay.onclick = closeModal;
+}
+
+function closeModal() {
+  document.getElementById("pop-up").style.display = "none";
+  document.querySelector(".overlay").style.display = "none";
+}
+
+// Scroll navbar style
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  const navbarLinks = document.querySelector(".navbar-links");
+
+  if (window.scrollY > 0) {
+    navbar.classList.add("scrolled");
+    navbarLinks.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+    navbarLinks.classList.remove("scrolled");
+  }
+});
