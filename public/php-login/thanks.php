@@ -20,18 +20,52 @@ session_start();
     <a href="#">About Us</a>
   </div>
 </nav>
-<div class="container">
-  <div class="box form-box">
-    <header>THANK YOU!</header>
-    <p><strong>Nama:</strong> <?php if (isset($_SESSION['nama'])) echo htmlspecialchars($_SESSION['nama']); ?></p>
-    <p><strong>Email:</strong> <?php if (isset($_SESSION['email'])) echo htmlspecialchars($_SESSION['email']); ?></p>
-    <p><strong>Pesan:</strong> <?php if (isset($_SESSION['pesan'])) echo htmlspecialchars($_SESSION['pesan']); ?></p>
-    <p><strong>Nominal Donasi:</strong> Rp<?php if (isset($_SESSION['nominal'])) echo number_format($_SESSION['nominal']); ?></p>
-    <p><strong>Metode Pembayaran:</strong> <?php if (isset($_SESSION['payment'])) echo htmlspecialchars($_SESSION['payment']); ?></p>
-    <br>
-    <a href="donate.php"><button class="btn">Donasi Lagi</button></a>
-  </div>
-</div>
+<main class="thank-container">
+  <div class="thank-wrapper">
+    <video class="thank-video" id="thankVideo" autoplay muted playsinline preload="auto">
+        <source src="check.mp4" type="video/mp4" />
+    </video>
+    <script>
+      const video = document.getElementById('thankVideo');
+      video.addEventListener('ended', () => {
+        video.pause();
+        video.currentTime = video.duration;
+      });
+    </script>
+    <div class="thank-banner">
+      <h1>🎉 Thank You for Your Donation! 🎉</h1>
+      <p>Your support means a lot. We've received your contribution.</p>
+    </div>
+    <section class="thank-card">
+      <h2>Donation Summary</h2>
+      <div class="info-grid">
+        <table class="donation-table">
+          <tr>
+            <th>Name</th>
+            <td><?php if(isset($_SESSION['nama'])) echo htmlspecialchars($_SESSION['nama']); ?></td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td><?php if(isset($_SESSION['email'])) echo htmlspecialchars($_SESSION['email']); ?></td>
+          </tr>
+          <tr>
+            <th>Message</th>
+            <td><?php if(isset($_SESSION['pesan'])) echo htmlspecialchars($_SESSION['pesan']); ?></td>
+          </tr>
+          <tr>
+            <th>Amount</th>
+            <td>Rp<?php if(isset($_SESSION['nominal'])) echo number_format($_SESSION['nominal']); ?></td>
+          </tr>
+          <tr>
+            <th>Payment Method</th>
+            <td><?php if(isset($_SESSION['payment'])) echo htmlspecialchars($_SESSION['payment']); ?></td>
+          </tr>
+        </table>
+      </div>
+      <a href="donate.php" class="btn btn-primary">Donate Again</a>
+    </section>
 
+  </div>
+</main>
 </body>
 </html>
