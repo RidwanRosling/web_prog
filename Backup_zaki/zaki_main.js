@@ -1,4 +1,4 @@
-import "./style.css";
+import "./zaki_style.css";
 // import {closeModal, openModal} from "./app.js";
 
 document.querySelector("#app").innerHTML = `
