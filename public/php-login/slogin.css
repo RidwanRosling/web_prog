@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url('mountains-1412683.png');
+  /* background-image: url('.../public/mountains-1412683.png'); */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -15,11 +15,12 @@ body {
 
 .nav {
   position: fixed;
+  backdrop-filter: blur(10px);
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
-  background: #fff;
+  background: transpasrent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,8 +59,8 @@ body {
 }
 
 .box {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background: rgb(255, 255, 255);
+  /* backdrop-filter: blur(10px); */
   display: flex;
   flex-direction: column;
   padding: 40px 30px;
@@ -105,7 +106,7 @@ select {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: rgba(68, 29, 29, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   transition: border 0.3s;
 }
 
@@ -115,19 +116,142 @@ select:focus {
   outline: none;
 }
 
-.btn {
-  height: 45px;
-  background: #da9e3d;
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s;
+.thank-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  min-height: calc(100vh - 60px);
 }
 
-.btn:hover {
-  background: #c68d2e;
+.thank-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.thank-video {
+  /* width: 100%; */
+  max-width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.thank-image {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 20px rgba(0,0,0,0.1); */
+  margin-bottom: -10px;
+}
+
+.thank-banner h1 {
+  font-size: 38px;
+  color:rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.thank-banner p {
+  font-size: 18px;
+  color: #555;
+}
+
+.thank-card h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+
+.thank-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+.thank-card h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.thank-card p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.info-grid > div {
+  font-size: 16px;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #8284B7ff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #3F426Bff;
+}
+
+.donation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto 30px;
+  font-size: 16px;
+}
+
+.donation-table th,
+.donation-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.donation-table th {
+  width: 40%;
+  background-color: #f7f7f7;
+  font-weight: 600;
+  color: #333;
+}
+
+.donation-table td {
+  color: #444;
 }
 
 .message {

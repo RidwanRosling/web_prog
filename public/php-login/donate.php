@@ -9,8 +9,7 @@ if (isset($_POST['submit'])) {
     $nominal = (int)$_POST['amount'];
     $payment = mysqli_real_escape_string($conn, $_POST['payment-method']);
 
-    $insert = mysqli_query($conn, "INSERT INTO donations(nama, email, nominal, pesan, payment_method) 
-        VALUES('$nama','$email','$nominal','$pesan','$payment')");
+    $insert = mysqli_query($conn, "INSERT INTO donations(nama, email, nominal, pesan, payment_method) VALUES('$nama','$email','$nominal','$pesan','$payment')");
 
     if ($insert) {
         $_SESSION['nama'] = $nama;
@@ -72,9 +71,7 @@ if (isset($_POST['submit'])) {
             <option value="PayPal">PayPal</option>
         </select>
       </div>
-      <div class="field">
-        <input type="submit" class="btn" name="submit" value="Donate">
-      </div>
+      <button type="submit" name="submit" class="btn btn-primary">Donate</button>
     </form>
   </div>
 </div>
