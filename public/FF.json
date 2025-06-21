@@ -5,19 +5,22 @@
         "nama": "Harimau Sumatra",
         "spesies": "Panthera tigris sumatra",
         "asal": "Sumatra",
-        "keterangan": "Subspesies harimau terakhir di Indonesia,"
+        "keterangan": "Subspesies harimau terakhir di Indonesia, hidup di hutan dataran rendah dan rawa-rawa. Terancam punah akibat perburuan dan hilangnya habitat.",
+        "populasi": 400
       },
       {
         "nama": "Gajah Sumatra",
         "spesies": "Elephas maximus sumatranus",
         "asal": "Sumatra",
-        "keterangan": "Herbivora besar, populasinya semakin menyusut"
+        "keterangan": "Gajah berukuran lebih kecil dari gajah Asia lainnya. Habitatnya menyusut akibat konversi hutan menjadi perkebunan.",
+        "populasi": 2400
       },
       {
         "nama": "Orangutan Sumatra",
         "spesies": "Pongo abelii",
         "asal": "Sumatra",
-        "keterangan": "Primata cerdas, hidup di hutan hujan tropis"
+        "keterangan": "Salah satu primata paling cerdas, membangun sarang untuk tidur di pohon, hanya ditemukan di Sumatra utara.",
+        "populasi": 14000
       }
     ],
     "flora": [
@@ -25,19 +28,22 @@
         "nama": "Rafflesia",
         "spesies": "Rafflesia arnoldii",
         "asal": "Sumatra",
-        "keterangan": "Bunga terbesar di dunia, tidak berakar/berdaun"
+        "keterangan": "Bunga terbesar di dunia, tidak berakar/berdaun, tumbuh sebagai parasit di tanaman merambat.",
+        "populasi": 1000
       },
       {
         "nama": "Bunga Bangkai",
         "spesies": "Amorphophallus titanum",
         "asal": "Sumatra",
-        "keterangan": "Mengeluarkan bau busuk untuk menarik serangga"
+        "keterangan": "Mengeluarkan bau busuk untuk menarik serangga penyerbuk, berbunga sangat jarang.",
+        "populasi": 500
       },
       {
         "nama": "Sialang",
         "spesies": "Koompassia excelsa",
         "asal": "Sumatra",
-        "keterangan": "Pohon tinggi tempat lebah madu liar bersarang"
+        "keterangan": "Pohon tinggi tempat lebah madu liar bersarang, penting bagi ekosistem dan masyarakat adat.",
+        "populasi": 30000
       }
     ]
   },
@@ -47,19 +53,22 @@
         "nama": "Orangutan Kalimantan",
         "spesies": "Pongo pygmaeus",
         "asal": "Kalimantan",
-        "keterangan": "Primata besar, dilindungi, sangat cerdas"
+        "keterangan": "Hidup di hutan tropis dataran rendah. Dikenal karena kecerdasannya dan kemampuan menggunakan alat.",
+        "populasi": 57000
       },
       {
         "nama": "Bekantan",
         "spesies": "Nasalis larvatus",
         "asal": "Kalimantan",
-        "keterangan": "Monyet berhidung panjang, hidup di hutan bakau"
+        "keterangan": "Monyet dengan hidung panjang khas, hidup di hutan rawa dan bakau, juga perenang ulung.",
+        "populasi": 5000
       },
       {
-        "nama": "Macan Dahan",
+        "nama": "Macan Dahan Borneo",
         "spesies": "Neofelis diardi borneensis",
         "asal": "Kalimantan",
-        "keterangan": "Kucing besar bertutul, hidup di pohon"
+        "keterangan": "Kucing besar dengan tutul besar, sangat pandai memanjat, sering beraktivitas di malam hari.",
+        "populasi": 750
       }
     ],
     "flora": [
@@ -67,145 +76,22 @@
         "nama": "Kayu Ulin",
         "spesies": "Eusideroxylon zwageri",
         "asal": "Kalimantan",
-        "keterangan": "Kayu besi, sangat keras dan tahan air"
+        "keterangan": "Kayu besi, sangat keras dan tahan air, banyak digunakan untuk bangunan tradisional.",
+        "populasi": 20000
       },
       {
         "nama": "Anggrek Hitam",
         "spesies": "Coelogyne pandurata",
         "asal": "Kalimantan",
-        "keterangan": "Endemik Kalimantan Timur"
+        "keterangan": "Endemik Kalimantan Timur, bunga langka berwarna hitam kehijauan.",
+        "populasi": 1500
       },
       {
         "nama": "Tengkawang",
         "spesies": "Shorea spp.",
         "asal": "Kalimantan",
-        "keterangan": "Penghasil lemak nabati dari biji"
-      }
-    ]
-  },
-  "Jawa": {
-    "fauna": [
-      {
-        "nama": "Elang Jawa",
-        "spesies": "Nisaetus bartelsi",
-        "asal": "Jawa",
-        "keterangan": "Simbol negara Indonesia, sangat langka"
-      },
-      {
-        "nama": "Macan Tutul Jawa",
-        "spesies": "Panthera pardus melas",
-        "asal": "Jawa",
-        "keterangan": "Predator besar terakhir di Jawa"
-      },
-      {
-        "nama": "Lutung Jawa",
-        "spesies": "Trachypithecus auratus",
-        "asal": "Jawa",
-        "keterangan": "Primata dengan warna abu-abu/hitam"
-      }
-    ],
-    "flora": [
-      {
-        "nama": "Edelweis Jawa",
-        "spesies": "Anaphalis javanica",
-        "asal": "Jawa",
-        "keterangan": "Bunga pegunungan, tidak boleh dipetik"
-      },
-      {
-        "nama": "Jati",
-        "spesies": "Tectona grandis",
-        "asal": "Jawa",
-        "keterangan": "Pohon kayu keras bernilai ekonomis tinggi"
-      },
-      {
-        "nama": "Akasia",
-        "spesies": "Acacia auriculiformis",
-        "asal": "Jawa",
-        "keterangan": "Sering ditanam untuk reboisasi"
-      }
-    ]
-  },
-  "Sulawesi": {
-    "fauna": [
-      {
-        "nama": "Anoa",
-        "spesies": "Bubalus quarlesi",
-        "asal": "Sulawesi",
-        "keterangan": "Kerbau kecil endemik, sangat terancam"
-      },
-      {
-        "nama": "Ica",
-        "spesies": "Babyrousa babyrussa",
-        "asal": "Sulawesi",
-        "keterangan": "Taring melengkung ke atas, unik"
-      },
-      {
-        "nama": "Tarsius",
-        "spesies": "Tarsius tarsier",
-        "asal": "Sulawesi",
-        "keterangan": "Primata kecil bermata besar, aktif malam"
-      }
-    ],
-    "flora": [
-      {
-        "nama": "Eboni Sulawesi",
-        "spesies": "Diospyros celebica",
-        "asal": "Sulawesi",
-        "keterangan": "Kayu hitam keras dan berharga tinggi"
-      },
-      {
-        "nama": "Palem endemik",
-        "spesies": "Areca spp.",
-        "asal": "Sulawesi",
-        "keterangan": "Beberapa jenis palem hanya tumbuh di Sulawesi"
-      },
-      {
-        "nama": "Cempaka kuning",
-        "spesies": "Michelia champaca",
-        "asal": "Sulawesi",
-        "keterangan": "Tumbuhan berbunga harum"
-      }
-    ]
-  },
-  "Papua": {
-    "fauna": [
-      {
-        "nama": "Burung Cenderawasih",
-        "spesies": "Paradisaeidae",
-        "asal": "Papua",
-        "keterangan": "Burung surga, banyak spesies, bulu jantan indah"
-      },
-      {
-        "nama": "Kasuari",
-        "spesies": "Casuarius casuarius",
-        "asal": "Papua",
-        "keterangan": "Burung besar tak bisa terbang, agresif"
-      },
-      {
-        "nama": "Kanguru Pohon",
-        "spesies": "Dendrolagus spp.",
-        "asal": "Papua",
-        "keterangan": "Marsupial pemanjat pohon, unik dari Papua"
-      }
-    ],
-    "flora": [
-      {
-        "nama": "Matoa",
-        "spesies": "Pometia pinnata",
-        "asal": "Papua",
-        "keterangan": "Pohon buah khas Papua"
-      },
-      {
-        "nama": "Anggrek raksasa",
-        "spesies": "Grammatophyllum speciosum",
-        "asal": "Papua",
-        "keterangan": "Salah satu anggrek terbesar di dunia"
-      },
-      {
-        "nama": "Pohon besi",
-        "spesies": "Intsia bijuga",
-        "asal": "Papua",
-        "keterangan": "Kayu keras dan berat, bernilai tinggi"
+        "keterangan": "Penghasil lemak nabati dari biji, penting dalam industri makanan dan kosmetik.",
+        "populasi": 100000
       }
     ]
   }

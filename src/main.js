@@ -10,7 +10,7 @@ document.head.appendChild(faLink);
 document.querySelector("#app").innerHTML = `
   <nav class="navbar">
     <div class="navbar-brand">
-      <img src="forestRanger.png" alt="Logo Forest Ranger"/>
+      <a href="#"><img src="forestRanger.png" alt="Logo Forest Ranger"/></a>
     </div>
     <ul class="navbar-links">
       <li><a href="#flora-fauna">Species</a></li>
