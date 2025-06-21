@@ -13,9 +13,8 @@ document.querySelector("#app").innerHTML = `
       <img src="forestRanger.png" alt="Logo Forest Ranger"/>
     </div>
     <ul class="navbar-links">
-      <li><a href="#">Support</a></li>
       <li><a href="#flora-fauna">Species</a></li>
-      <li class="show-aboutUs"><a href="#">About us</a></li>
+      <li class="show-abt"><a href="#">About us</a></li>
       <li><a id="login" href="http://localhost/web_prog/public/php-login/donate.php">Donation</a></li>
     </ul>
 
@@ -28,6 +27,70 @@ document.querySelector("#app").innerHTML = `
       
     </div>
   </div>
+
+  <div id="abt-popup" class="modal-abt hidden-abt">
+      <button class="close-abt">&times;</button>
+
+      <h1 class="aboutUs-txt" id="aboutUs">About Us</h1>
+      <p class="aboutUs-txt" id="p1">
+        Forest Ranger adalah platform digital yang bertujuan meningkatkan kesadaran tentang spesies langka di Indonesia.
+      </p>
+      <p class="aboutUs-txt">
+        Kami percaya setiap makhluk memiliki cerita yang layak untuk dibagikan melalui gambar. Misi kami adalah menyuarakan alam,
+        mendukung pelestarian, dan menginspirasi masyarakat untuk melindungi keanekaragaman hayati demi masa depan
+      </p>
+      <p class="aboutUs-txt">
+        Melalui pendekatan visual dan edukatif, kami menghubungkan masyarakat dengan alam liar Indonesia dari hutan tropis hingga
+        pegunungan yang menjadi rumah bagi satwa terancam punah.
+        Kami berkomitmen menjadi jembatan antara manusia dan alam, serta mengajak semua orang untuk menjadi bagian dari perubahan positif dalam menjaga kehidupan liar.
+      </p>
+      <div class="slider">
+        <div class="slide-track">
+          
+          <div class="slide">
+            <img src="images/badak sumatera.jpeg" class="slide-img">
+          </div>
+
+          <div class="slide">
+            <img src="images/burung cenderawasih.jpg" class="slide-img">
+          </div>
+          
+          <div class="slide">
+            <img src="images/harimau.jpg" class="slide-img">
+          </div>      
+
+          <div class="slide">
+            <img src="images/komodo.jpg" class="slide-img">
+          </div>
+
+          <div class="slide">
+            <img src="images/orang utan.JPG" class="slide-img">
+          </div>
+          <div class="slide">
+            <img src="images/badak sumatera.jpeg"/ class="slide-img">
+          </div>
+
+          <div class="slide">
+            <img src="images/burung cenderawasih.jpg"/ class="slide-img">
+          </div>
+          
+          <div class="slide">
+            <img src="images/harimau.jpg"/ class="slide-img">
+          </div>      
+
+          <div class="slide">
+            <img src="images/komodo.jpg"/ class="slide-img">
+          </div>
+
+          <div class="slide">
+            <img src="images/orang utan.JPG"/ class="slide-img">
+          </div>
+
+        </div>
+      </div>  
+    </div>
+
+  <div class="overlay-abt hidden-abt"></div>
 
   <div id="pop-up" class="modal hidden"></div>
   <div class="overlay hidden"></div>
@@ -54,7 +117,7 @@ document.querySelector("#app").innerHTML = `
     <ul class="nav-footer">
       <li><a href="#">Support</a></li>
       <li><a href="#flora-fauna">Species</a></li>
-      <li class="show-aboutUs"><a href="#">About us</a></li>
+      <li class="show-abt"><a href="#">About us</a></li>
       <li><a href="#" class="logo-social-media"><i class="fa fa-youtube"></i></a></li>
       <li><a href="#" class="logo-social-media"><i class="fa fa-instagram"></i></a></li>
       <li><a href="#" class="logo-social-media"><i class="fa fa-twitter"></i></a></li>
@@ -185,3 +248,40 @@ window.addEventListener("scroll", () => {
     navbarLinks.classList.remove("scrolled");
   }
 });
+
+
+// 2. Ambil elemen yang kita butuhkan
+const modal = document.querySelector(".modal-abt");
+const overlay = document.querySelector(".overlay-abt");
+const btnCloseModal = document.querySelector(".close-abt");
+const btnOpenModal = document.querySelectorAll(".show-abt");
+
+// 3. Definisi fungsi
+const openModal_abt = function () {
+  modal.classList.remove("hidden-abt");
+  overlay.classList.remove("hidden-abt");
+};
+
+const closeModal_abt = function () {
+  modal.classList.add("hidden-abt");
+  overlay.classList.add("hidden-abt");
+};
+
+// 4. Event binding
+// 4a. Tombol “About us”
+btnOpenModal.forEach((btn) => btn.addEventListener("click", openModal_abt));
+
+// 4b. Tombol ✕ dan overlay background
+btnCloseModal.addEventListener("click", closeModal_abt);
+overlay.addEventListener("click", closeModal_abt);
+
+// 4c. Tutup dengan Escape
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden-abt")) {
+    closeModal_abt();
+  }
+});
+
+// 5. Jika ingin modalnya langsung tersembunyi di awal,
+//    pastikan class="hidden" sudah ada di HTML (sudah kita pakai).
+//    Jadi **tidak perlu** memanggil closeModal() lagi di sini.
