@@ -13,7 +13,6 @@ document.querySelector("#app").innerHTML = `
       <a href="#"><img src="forestRanger.png" alt="Logo Forest Ranger"/></a>
     </div>
     <ul class="navbar-links">
-      <li><a href="#">Support</a></li>
       <li><a href="#flora-fauna">Species</a></li>
       <li class="show-aboutUs"><a href="#">About us</a></li>
       <li><a id="login" href="http://localhost/web_prog/public/php-login/donate.php">Donation</a></li>
